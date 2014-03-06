@@ -1,0 +1,18 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SmoothMoves\readme.txt">
+    <Files>
+      <File FileName="Assets\scripts\GameEditor.cs" Line="64" Column="7" />
+      <File FileName="Assets\Piece.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\Cloud.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\Rainbow.cs" Line="1" Column="1" />
+      <File FileName="Assets\Berty.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\GameControl.cs" Line="7" Column="1" />
+      <File FileName="Assets\SmoothMoves\readme.txt" Line="6" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

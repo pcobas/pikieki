@@ -1,0 +1,11 @@
+equilibrium/Temp
+equilibrium/Library
+/equilibrium/Temp
+/equilibrium/obj
+/equilibrium/Library
+*.unityproj
+*.sln
+*.csproj
+*.dwlt
+
+equlibrium/Library/AnnotationManager
