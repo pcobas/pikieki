@@ -271,7 +271,6 @@ public class PieceLocation
 		public SerializablePieceLocation getSerializable ()
 		{
 				SerializablePieceLocation spl = new SerializablePieceLocation ();
-				spl.id = id;
 				spl.rx = rotation.eulerAngles.x.ToString ();
 				spl.ry = rotation.eulerAngles.y.ToString ();
 				spl.rz = rotation.eulerAngles.z.ToString ();
