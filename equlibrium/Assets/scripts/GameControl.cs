@@ -11,11 +11,16 @@ public class GameControl : MonoBehaviour {
 	public int moves;
 	public BoneAnimation ground;
 	public bool player_won;
+	public static string level_to_play; 
+	public static bool is_custom_level;
 	// Use this for initialization
 	void Start () {
+		Debug.Log (Application.persistentDataPath);
 		Instance=this;
-		LoadLevel ("tutorial01");
+		if(is_custom_level){
+		LoadLevel (level_to_play);
 		ground.Play ("lookUp");
+		}
 	}
 	
 	// Update is called once per frame
@@ -24,6 +29,9 @@ public class GameControl : MonoBehaviour {
 	}
 
 
+	public void GoToMenu(){
+		Application.LoadLevel("menu");
+	}
 	public void Win(){
 		if(!player_won){
 		Rainbow.SetActive (true);

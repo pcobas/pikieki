@@ -1,15 +1,20 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\GameControl.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\GameEditor.cs">
     <Files>
-      <File FileName="Assets\scripts\GameControl.cs" Line="18" Column="26" />
-      <File FileName="Assets\scripts\GameEditor.cs" Line="236" Column="4" />
+      <File FileName="Assets\scripts\GameEditor.cs" Line="176" Column="1" />
+      <File FileName="Assets\scripts\GameControl.cs" Line="48" Column="1" />
       <File FileName="Assets\scripts\PieceDrop.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\DestroyBody.cs" Line="11" Column="25" />
+      <File FileName="Assets\scripts\DestroyBody.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\GameMenu.cs" Line="54" Column="31" />
+      <File FileName="Assets\LevelButton.cs" Line="17" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="C:\Users\pablo\Documents\GitHub\pikieki\equlibrium\Assets\scripts\GameEditor.cs" line="166" />
+      <Breakpoint file="C:\Users\pablo\Documents\GitHub\pikieki\equlibrium\Assets\scripts\GameEditor.cs" line="154" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

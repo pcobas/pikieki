@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
-
+using System.Linq;
 public class GameEditor : MonoBehaviour
 {
 
@@ -24,7 +24,7 @@ public class GameEditor : MonoBehaviour
 		// Use this for initialization
 		void Start ()
 		{
-
+		Debug.Log (Application.persistentDataPath);
 				gridContainer = new GameObject ("GridContainer");
 				Instance = this;
 				//Load ("zxczczx");
@@ -157,6 +157,31 @@ public class GameEditor : MonoBehaviour
 						Debug.Log ("JsonData:" + json);
 						ES2.Save (json, filename + ".json");
 						HideSaveDialog ();
+						Level level=new Level();
+						level.name=filename;
+						level.stars=0;
+						string json_levels;
+						if(ES2.Exists ("levels")){
+							json_levels = ES2.Load<string> ("levels");
+				Level[] all_levels = LitJson.JsonMapper.ToObject<Level[]> (json_levels);
+				List<Level> levelList=all_levels.ToList ();
+				Debug.Log ("Levels in file:"+all_levels.Length);
+				levelList.Add (level);
+				Debug.Log ("Levels in file:"+levelList.Count);
+				json_levels=LitJson.JsonMapper.ToJson (levelList);
+							ES2.Save (json_levels,"levels");
+           		 }
+					else
+					{
+						List<Level> all_levels=new List<Level>();
+				Debug.Log ("Levels in file:"+all_levels.Count);
+						all_levels.Add (level);
+				Debug.Log ("Levels in file:"+all_levels.Count);
+						json_levels=LitJson.JsonMapper.ToJson (all_levels);
+						ES2.Save (json_levels,"levels");
+		            }
+					Application.LoadLevel ("menu");
+
 				} else {
 
 				}
